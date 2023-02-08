@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <!-- <link  rel="stylesheet" href="../css/bootstrap.min.css"> -->
+    <link  rel="stylesheet" href="css/bootstrap.min.css">
+    <link  rel="stylesheet" href="css/all.css">
+    <link  rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/">
+
+    
+</head>
+
+<body class="container p-5" >
+    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-current="true">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-current="true">SPORTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-current="true">HEALTH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-current="true">ENTERTAINMENT</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- this is the beginning of the normal hero -->
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/pic 2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Welcome to Skylark's blog</h1>
+            <p class="lead">.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Home</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">News</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- this is the beginning of slider -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- end of the carousel -->
+  
+  <div class="row" >
+
+
+    <!-- first column -->
+    <div class="col-md-9" >
+        <div class="row"  id="output">
+            <h1>
+                <marquee>
+                    Loading Content from API.......
+                </marquee>
+                
+            </h1>
+
+        </div>
+
+    </div>
+
+         <!-- second column -->
+        <div class="col-md-3"> 
+            <div class="card d-flex"> 
+                
+            
+                <div class="card d-flex"> 
+                    <form class="form-group card p-3 m-1" id="addPost">
+                        <div class="form-group">
+                            
+                            <label for="title">Title </label>
+                            <input type="text" id="title" class="form-control">
+                        </div>
+                        <div class="form-group mb-5">
+                            <label for="body">Body </label>
+                            <textarea id="body" class="form-control"
+                            placeholder="input the body here">
+                            </textarea>
+                        </div>
+                        <input type="submit" class="btn btn-warning">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- first column end -->
+
+        
+    </div>
+<script>
+
+   
+   //start of fetching API from https://api.xpressglobe.com/
+
+//    const fetchAPI = document.getElementById('fetchAPI');
+   window.addEventListener(
+    'load', fetchAPIfunction
+   )
+   
+
+   function fetchAPIfunction(){
+    //https://api.xpressglobe.com
+    fetch('https://emmi-softwaretrack.online/api/blogs')
+    .then( 
+        
+        (res) => {
+            if(!res.ok) throw new Error(`the HTTP error is ${res.status}`);
+
+            return res.json() 
+   }
+    )
+    .then(
+        
+        (data) => {
+        
+        let output = ``;
+        data.data.forEach(
+            (blog) => {
+            output += `
+            <div class="col-md-4 p-1">
+            <div class="card p-3">
+            <ul style='list-style-type:none'>
+                <li><small>${blog.id}  </small> </li>
+                <li><h2> ${blog.title}  </h2> </li>
+                <li><p> ${blog.body}   <p> </li>
+                <li> <a href="#example" class="btn btn-outline-secondary" id="update">
+                    Update This Post </a> </li>
+            </ul>
+            </div>
+            </div>
+            
+            `
+            document.getElementById('output').innerHTML = output;
+        });
+            
+    
+            }
+    )
+    .catch(
+        
+        (err) => console.error(err.message)
+        
+    )
+   }
+//end
+
+
+//post script
+const blog = document.getElementById('addPost')
+    blog.addEventListener('submit', addPost)
+
+    function addPost(e){
+        e.preventDefault();
+        const title = document.getElementById('title').value
+        const body = document.getElementById('body').value
+        let url ='https://api.xpressglobe.com/posts';
+        //fetch takes in 2 parameters normally, the url and the object where some properties are deifned
+        //POST to provide new data to server
+        //PUT to update existing data
+        // DELETE to delete existing data, passing in a parameter of e.g
+        fetch(url, 
+            {
+                method : 'POST',
+                headers : {
+                    'Accept': 'application/json', //what we are accepting from server
+                    'Content-type' : 'application/json' //what type of content are we sending
+                            },
+                body:  JSON.stringify(
+                    {
+                    id : id,
+                    title : title, 
+                    body : body
+                }
+                )
+            }
+        )
+        .then(
+            (res) => res.json()
+        )
+        .then(
+             
+             (data) =>{ 
+                if(data) return fetchAPIfunction();
+             
+             }
+            
+            )
+    }
+
+
+   
+
+  
+</script>
+<!-- this is the footer part -->
+<footer class="container-fluid px-4 py-5 bg-light w-100" id="icon-grid">
+    <h2 class="pb-2 border-bottom">Icon grid</h2>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <i class="fas fa-anchor"></i>
+        <div>
+          <h4 class="fw-bold mb-0">Featured title</h4>
+          <p>Paragraph of text beneath the heading to explain the heading.</p>
+        </div>
+      </div>
+    </div>
+</footer>
+  <!-- this is the end of the footer part -->
+
+  <footer class="container-fluid bg-dark p-5 text-light">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="p-3">
+                <img src="images/pic 2.jpg" class="img-fluid" width="200">
+                <h3>
+                    My Blog
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, odit facilis cumque 
+                     </p>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12">
+            <div class="p-3">
+                <h3>
+                    Address
+                </h3>
+                <ul style="list-style-type: none ;margin-left: -30px;">
+                    <li>
+                        About US
+                    </li>
+                    <li>
+                        Services
+                    </li>
+                    <li>
+                        Growth
+                    </li>
+                    <li>
+                        Marketing
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12">
+            <div class="p-3">
+                <h3>
+                    Social
+                </h3>
+                <ul style="list-style-type: none ; margin-left: -30px;">
+                    <li >
+                        Facebook
+                    </li>
+                    <li>
+                        Instagram
+                    </li>
+                    <li>
+                        Twitter
+                    </li>
+                    <li>
+                        LInkedIn
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12">
+            <div class="p-3">
+                <h3>
+                    Lifestyle
+                </h3>
+                <ul style="list-style-type: none ;margin-left: -30px;">
+                    <li>
+                        Health
+                    </li>
+                    <li>
+                        The Arts
+                    </li>
+                    <li>
+                        Travel & Tourism
+                    </li>
+                    <li>
+                        Human Angle
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

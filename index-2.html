@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+         function closePopup() {
+            document.getElementById("backdrop").style.display = "none"
+            document.getElementById("updateModal").style.display = "none"
+            document.getElementById("updateModal").classList.remove("show")
+            }
+    </script>
+</head>
+
+<body class="container p-5">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-current="true">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-current="true">SPORTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-current="true">HEALTH</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" tabindex="-1" aria-current="true">ENTERTAINMENT</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- this is the beginning of the normal hero -->
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/pic 2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Welcome to Skylark's blog</h1>
+            <p class="lead">.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Home</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">News</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- this is the beginning of slider -->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>New Headlines</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            <img src="images/pic 1.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            <img src="images/pic 3.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <img src="images/pic 2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- end of the carousel -->      
+      
+
+
+<!-- The Modal -->
+<div class="modal fade" id="updateModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Update Post</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" onclick="closePopup()">
+          </button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form class="form-group card p-3 m-1" id="updatePostForm">
+                <div class="form-group">
+                    <input type="text" id="updateId" class="form-control" readonly>
+                    <label for="updateTitle">Title </label>
+                    <input type="text" id="updateTitle" class="form-control">
+                </div>
+                
+                <div class="form-group mb-5">
+                    <label for="updateBody">Body </label>
+                    <textarea id="updateBody" class="form-control"
+                    placeholder="input the body here">
+                    </textarea>
+                </div>
+                <input type="submit" class="btn btn-outline-primary" value="Update Post">
+                
+            </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="closePopup()">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  <div class="modal-backdrop fade show" id="backdrop" style="display: none;"></div>
+<!-- end of popup -->
+
+
+    
+
+    <div class="row">
+
+
+        <!-- first column -->
+        <div class="col-md-9">
+            <div id="alert"></div>
+            
+            <div class="row" id="output">
+                <h1>
+                    <marquee>
+                        Loading Content from API.......
+                    </marquee>
+
+                </h1>
+
+            </div>
+
+        </div>
+        <!-- second column -->
+        <div class="col-md-3">
+            <div class="card d-flex">
+
+
+                <div class="card d-flex">
+                    <form class="form-group card p-3 m-1" id="addPost">
+                        <div class="form-group">
+
+                            <label for="title">Title </label>
+                            <input type="text" id="title" class="form-control">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="author">Author </label>
+                            <input type="text" id="author" class="form-control">
+                        </div>
+
+
+                        <div class="form-group mb-5">
+                            <label for="body">Body </label>
+                            <textarea id="body" class="form-control" placeholder="input the body here">
+                            </textarea>
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Publish Post">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- first column end -->
+
+
+    </div>
+    <script>
+
+//load the resources from the api on loading of webpage
+        window.addEventListener(
+            'load', fetchAPIfunction
+        )
+
+//function to fetch the API resources
+        function fetchAPIfunction() {
+            document.getElementById('title').value = '';
+            document.getElementById('author').value = '';
+            document.getElementById('body').value = '';
+
+            fetch('https://emmi-softwaretrack.online/api/blogs')
+                .then(
+
+                    (res) => {
+                        if (!res.ok) throw new Error(`the HTTP error is ${res.status}`);
+
+                        return res.json()
+
+                    }
+                )
+                .then(
+
+                    (data) => {
+                        // console.log(data.data)
+                        let output = '';
+                        data.data.forEach(
+                            (blog) => {
+                                output += `
+            <div class="col-md-6 p-1">
+                <div class="card p-3">
+                    <ul style='list-style-type:none'>
+                       
+                        <li><h2> ${blog.title}  </h2> </li>
+                        <li><small><strong>Published on ${new Date(blog.created_at)} <br>By ${blog.author} </strong> </small> </li>
+                        
+                        <li><p> ${blog.body}   <p> </li>
+                        <li>  </li>
+                    </ul>
+                    <button class="btn btn-outline-secondary updatePost" id="updatePost" data-id="${blog.id}" >
+                            Update Post
+                    </button> 
+                    <button class="btn btn-danger mt-2 deletePost" id="deletePost" data-id="${blog.id}">
+                        Delete Post ${blog.title}
+                    </button>
+            
+                    
+                </div>
+            </div>
+            
+            `
+                                document.getElementById('output').innerHTML = output;
+                                window.localStorage.setItem("data", JSON.stringify(data.data));
+                                waitLoadUpdate();
+                                waitLoad()
+                                
+                            });
+
+
+                    }
+                )
+                .catch(
+
+                    (err) => console.error(err.message)
+
+                )
+        }
+        //end
+
+
+
+        //add blog post
+        const addPost = document.getElementById('addPost');
+        addPost.addEventListener(
+            'submit',
+            addBlogPost
+        );
+
+        function addBlogPost(e) {
+            e.preventDefault();
+            const title = document.getElementById('title').value
+            const author = document.getElementById('author').value
+            const body = document.getElementById('body').value
+            const url = 'https://emmi-softwaretrack.online/api/blogs';
+            fetch(url,
+                {
+                    method: 'POST',
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-type": "application/json"
+                    },
+                    body: JSON.stringify(
+                        {
+                            title: title,
+                            author: author,
+                            body: body
+                        }
+                    )
+
+                }
+
+            )
+                .then(
+                    (res) => res.json()
+                )
+                .then(
+                    (data) => {
+                        // console.log(data)
+                        alert(data.message)
+                        setTimeout(
+                            fetchAPIfunction,
+                            100
+                        )
+                    }
+                )
+
+        }
+
+
+        //update part
+        function waitLoadUpdate() {
+                //newData is the array of objects from our server that was previously cached/stored using local storage
+        function searchStorage(postID, newData) {
+            // console.log(newData.length + ' and the postID is ' + postID)
+            for(i = 0; i < newData.length; i++ ){
+                // console.log(newData[i])
+                if (newData[i].id == postID) {
+                    // console.log(newData[i])
+
+                    document.getElementById('updateId').value = postID;
+                    document.getElementById('updateTitle').value = newData[i].title;
+                    document.getElementById('updateBody').value = newData[i].body;
+                    showPopup();
+                
+
+                    break;
+                }
+
+            }
+        }
+
+        function showPopup(){
+            document.getElementById("backdrop").style.display = "block";
+            document.getElementById("updateModal").style.display = "block";
+            document.getElementById("updateModal").classList.add("show");
+            
+
+        }
+
+        const updateButton = document.querySelectorAll('.updatePost')
+        updateButton.forEach(
+            button => {
+                button.addEventListener(
+                    'click',
+                    () => {
+                        let postID = button.dataset.id;
+                        // console.log(postID);
+                        let newData = JSON.parse(localStorage.getItem("data"))
+                       searchStorage(postID, newData) //this searchstorage fxn helps us to access the entire API GET request and search for individual posts
+                    }
+                )
+            }
+        )
+
+        }
+                    
+        const updateBlog = document.getElementById('updatePostForm');
+        updateBlog.addEventListener(
+                'submit',
+                updateBlogPost
+        );
+
+        function updateBlogPost(e) {
+            e.preventDefault(); //prevent the element from acting naturally in its default behaviour
+
+            const id = document.getElementById('updateId').value
+            const title = document.getElementById('updateTitle').value
+            const body = document.getElementById('updateBody').value
+            const url = `https://emmi-softwaretrack.online/api/update-blog/${id}`;
+            fetch(url,
+                {
+                    method: 'PUT',
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-type": "application/json"
+                    },
+                    body: JSON.stringify(
+                        {
+                            title: title,
+                            body: body
+                        }
+                    )
+
+                }
+
+            )
+                .then(
+                    (res) => res.json()
+                )
+                .then(
+                    (data) => {
+                        closePopup();
+                        alert(data.message)
+                        setTimeout(
+                            fetchAPIfunction,
+                            100
+                        )
+                    }
+                )
+
+        }
+
+
+
+
+
+
+
+        //delete button part
+        function waitLoad(){
+        const deletePost = document.querySelectorAll('.deletePost');
+        // console.log(deletePost);
+        deletePost.forEach(
+            button => {
+                button.addEventListener(
+                   'click', () => {
+                   
+                        let id = button.dataset.id
+                        let text = `Do you want to Delete Post ${id}`
+                        if(confirm(text) == true){
+                            deleteBlogPost(id)
+                        } else{
+                            fetchAPIfunction()
+                        }
+                    
+                   } 
+                )
+            }
+        )
+        }
+            
+        function deleteBlogPost(id){
+            
+            const url = `https://emmi-softwaretrack.online/api/delete-blog/${id}`
+            fetch(
+                url,
+                {
+                    method: 'DELETE',
+                    headers: {
+                        "Accept" : "application/json",
+                        "Content-type" : "application/json"
+                    }
+                }
+
+            )
+            .then(
+                (res) => res.json()
+            )
+            .then(
+                (data) => {
+                        // console.log(data)
+                        sweetAlert(data.message)
+                        setTimeout(
+                            fetchAPIfunction,
+                            100
+                        )
+                    }
+            )
+        }
+
+        //for alerts
+        function sweetAlert(msg){
+            document.getElementById('alert').innerHTML = `
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            ${msg}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+                `
+        }
+
+    </script>
+    <footer class="container-fluid bg-dark p-5 text-light">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="p-3">
+                    <img src="images/pic 2.jpg" class="img-fluid" width="200">
+                    <h3>
+                        My Blog
+                    </h3>
+                    <p>
+                        A division of foundation college of computer and vocational studies. 
+                         </p>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="p-3">
+                    <h3>
+                        Address
+                    </h3>
+                    <ul style="list-style-type: none ;margin-left: -30px;">
+                        <li>
+                            About US
+                        </li>
+                        <li>
+                            Services
+                        </li>
+                        <li>
+                            Growth
+                        </li>
+                        <li>
+                            Marketing
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="p-3">
+                    <h3>
+                        Social
+                    </h3>
+                    <ul style="list-style-type: none ; margin-left: -30px;">
+                        <li >
+                            Facebook
+                        </li>
+                        <li>
+                            Instagram
+                        </li>
+                        <li>
+                            Twitter
+                        </li>
+                        <li>
+                            LInkedIn
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="p-3">
+                    <h3>
+                        Lifestyle
+                    </h3>
+                    <ul style="list-style-type: none ;margin-left: -30px;">
+                        <li>
+                            Health
+                        </li>
+                        <li>
+                            The Arts
+                        </li>
+                        <li>
+                            Travel & Tourism
+                        </li>
+                        <li>
+                            Human Angle
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+    
+
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
